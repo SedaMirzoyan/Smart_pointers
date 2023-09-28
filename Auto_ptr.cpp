@@ -61,7 +61,7 @@ public:
         if (this != &ob)
         {
             delete m_ptr;
-            m_ptr = ob.m_ptr;
+            m_ptr = ob.release();
         }
         return *this;
     }
